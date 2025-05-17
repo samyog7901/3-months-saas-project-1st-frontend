@@ -1,7 +1,8 @@
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
-import Home from './Home'
-import About from './About'
-import Contact from './Contact'
+import HomePage from './pages/HomePage'
+import EditPage from './pages/EditPage'
+import CreatePage from './pages/CreatePage'
+import Singlepage from './pages/Singlepage'
 
 
 function App(){ 
@@ -9,9 +10,10 @@ function App(){
   return (
   <BrowserRouter>
   <Routes>
-    <Route path = "/" element = {<Home/>} /> 
-    <Route path = "/about" element = {<About/>} /> 
-    <Route path = "/contact" element = {<Contact/>} /> 
+    <Route path = "/" element = {<HomePage/>} /> 
+    <Route path = "/edit-book" element = {<EditPage/>} /> 
+    <Route path = "/create-book" element = {<CreatePage/>} /> 
+    <Route path = "/single-book" element = {<Singlepage/>}/>
   </Routes>
   </BrowserRouter>
   )
